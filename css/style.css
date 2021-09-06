@@ -1,16 +1,16 @@
 body{
 
+font-family: 'Lexend Deca', sans-serif;
+font-weight: 400;
+margin: 0;
+
 }
 
-
-
-
-
-
-
-
-
-
+img{
+  max-width: 100%;
+  display: block;
+  margin: 0;
+}
 
 
 
@@ -18,22 +18,9 @@ body{
 Typography
 ============*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
 
 
 
@@ -43,8 +30,77 @@ Layout
 
 .container {
   width: 90%;
-  max-width: 1150px;
-  border: 1px solid magenta;
+  max-width: 1000px;
+  /* border: 1px solid magenta; */
   margin: 0 auto;
   padding: 0;
+}
+
+.card-container{
+  display: flex;
+  margin: 5em auto;
+  color: #fff;
+}
+
+@media (max-width:375px) {
+  .card-container{
+    flex-direction: column;
+  }
+}
+
+
+/* card */
+.card-body{
+  padding: 4.5em;
+}
+
+.card-body a{
+  margin-top: 3.5em;
+  padding: 0.6em 1.5em;
+  background-color: #fff;
+  border: none;
+}
+
+
+.card-body-1{
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-body-1 a{
+  color: hsl(31, 77%, 52%);
+}
+
+.card-body-2{
+background-color: hsl(184, 100%, 22%);
+}
+
+.card-body-2 a{
+  color: hsl(184, 100%, 22%);
+}
+
+.card-body-3{
+background-color: hsl(179, 100%, 13%);
+}
+
+.card-body-3 a{
+  color: hsl(179, 100%, 13%);
+}
+
+.card-title{
+  margin-top: 1.25em;
+  font-size: 3.2rem;
+}
+
+.card-text{
+  margin-top: 2.5em;
+}
+
+@media (max-width:375px){
+  .card-body a{
+    margin-top: 1em;
+  }
+
+  .card-title{
+      margin-top: 1em;
+  }
 }
